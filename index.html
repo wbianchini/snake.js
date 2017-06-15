@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snaaake!</title>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+
+	<script type="text/javascript" src="lib/drawModule.js"></script>
+	<script type="text/javascript" src="lib/snake.js"></script>
+	<script type="text/javascript" src="lib/food.js"></script>
+	<script type="text/javascript" src="lib/game.js"></script>
+
+	<script type="text/javascript">
+		(function (window, document, gameModule) {
+			gameModule.init();
+
+			document.onkeydown = function (event) {
+				keyCode = window.event.keyCode;
+				keyCode = event.keyCode;
+
+				gameModule.checkKeyDirection(keyCode);
+			}
+
+			window.game = gameModule;
+
+		})(window, document, gameModule);
+	</script>
+</body>
+</html>
