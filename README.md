@@ -2,7 +2,7 @@
 
 Simple snake game using plain browser JavaScript object oriented and HTML5 canvas
 
-Snake is the common name for a videogame concept where the player maneuvers a line which grows in length, with the line itself being a primary obstacle.
+According to [Wikipedia](https://en.wikipedia.org/wiki/Snake_(video_game)), Snake is the common name for a videogame concept where the player maneuvers a line which grows in length, with the line itself being a primary obstacle.
 
 Use the arrow keys to control the snake direction
 
